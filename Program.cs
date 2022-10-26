@@ -4,7 +4,7 @@ using MySqlConnector;
 public class Movie
 {
     public int MovieBarcode { get; set; }
-    public string MovieName { get; set; }
+    public string movie_name { get; set; }
     public int DatePublished { get; set; }
     public double MoviePrice { get; set; }
     public bool isOutdated { get; set; }
@@ -12,20 +12,24 @@ public class Movie
     
     public override string ToString()
     {
-        return $"{MovieName}";
+        return $"{movie_name}";
     }
+    
 }
 
 internal class Program
 {
     private static void Main(string[] args)
     {
+        List<Movie> myList = new();
         using (var connection = new MySqlConnection("Server=localhost;Database=videotek;Uid=Johan;Pwd=abc123;"))
         {
-            var movie = connection.Query<Movie>("SELECT movie_name FROM movie;").ToList();
-            foreach(var item in movie)
+            var movies = connection.Query<Movie>("SELECT movie_name FROM movie;").ToList();
+            
+            foreach(Movie p in movies)
             {
-                Console.WriteLine(item);
+  
+                Console.WriteLine(p.movie_name);
             }
         }
     }
