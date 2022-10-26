@@ -1,0 +1,57 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "test/1.0.0": {
+        "dependencies": {
+          "Dapper": "2.0.123",
+          "MySqlConnector": "2.2.0-rc.1"
+        },
+        "runtime": {
+          "test.dll": {}
+        }
+      },
+      "Dapper/2.0.123": {
+        "runtime": {
+          "lib/net5.0/Dapper.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.123.33578"
+          }
+        }
+      },
+      "MySqlConnector/2.2.0-rc.1": {
+        "runtime": {
+          "lib/net6.0/MySqlConnector.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "test/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Dapper/2.0.123": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RDFF4rBLLmbpi6pwkY7q/M6UXHRJEOerplDGE5jwEkP/JGJnBauAClYavNKJPW1yOTWRPIyfj4is3EaJxQXILQ==",
+      "path": "dapper/2.0.123",
+      "hashPath": "dapper.2.0.123.nupkg.sha512"
+    },
+    "MySqlConnector/2.2.0-rc.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LANXMPIeTjbhxgwkpU314gJbcOr7WCsIymwFkUmUjo5CwSCOEE2RmcB4eSCYLG5FIBG/oN8vYxe+SS86hAloPw==",
+      "path": "mysqlconnector/2.2.0-rc.1",
+      "hashPath": "mysqlconnector.2.2.0-rc.1.nupkg.sha512"
+    }
+  }
+}
